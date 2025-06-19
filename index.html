@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Premium digital services by Digital World: songwriting, app development, YouTube SEO, and more with unmatched quality. Check proofs at https://t.me/+ES9P_HZGs140Yzhl!">
+  <meta name="keywords" content="digital services, songwriting, video scripts, app development, YouTube SEO, Digital World, premium digital agency, logo design, brand suggestion">
+  <meta name="author" content="Digital World">
+  <meta property="og:title" content="Digital World | Premium Digital Services">
+  <meta property="og:description" content="Transform your digital presence with our professional services. Check our proofs at https://t.me/+ES9P_HZGs140Yzhl!">
+  <meta property="og:type" content="website">
+  <title>Digital World | Premium Digital Services</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #000028;
+      color: #fff;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+
+    .particles {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      background: radial-gradient(circle at top left, rgba(26, 26, 74, 0.8), transparent);
+      overflow: hidden;
+    }
+
+    .particles::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, rgba(0, 247, 255, 0.1), transparent);
+      animation: particleFlow 15s linear infinite;
+    }
+
+    @keyframes particleFlow {
+      0% { transform: translateY(-100%); }
+      100% { transform: translateY(100%); }
+    }
+
+    header {
+      position: relative;
+      z-index: 100;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 40, 0.7);
+      backdrop-filter: blur(10px);
+      padding: 20px 0;
+      box-shadow: 0 2px 5px rgba(0, 247, 255, 0.2);
+    }
+
+    .nav-container {
+      max-width: 1400px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 30px;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #00f7ff;
+      text-shadow: 0 0 8px rgba(0, 247, 255, 0.6);
+    }
+
+    .nav-links a {
+      color: #e0faff;
+      text-decoration: none;
+      margin-left: 30px;
+      font-size: 1.1rem;
+      font-weight: 400;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #00f7ff;
+      text-shadow: 0 0 5px rgba(0, 247, 255, 0.5);
+    }
+
+    .hero {
+      position: relative;
+      height: 100vh;
+      padding-top: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: linear-gradient(rgba(0, 0, 40, 0.5), rgba(0, 0, 40, 0.5));
+      z-index: 1;
+      animation: parallax 20s linear infinite;
+    }
+
+    @keyframes parallax {
+      0% { background-position: 0 0; }
+      100% { background-position: 0 -100px; }
+    }
+
+    .hero-content h1 {
+      font-size: 4.5rem;
+      font-weight: 800;
+      color: #00f7ff;
+      text-shadow: 0 0 15px rgba(0, 247, 255, 0.8);
+      margin-bottom: 20px;
+      animation: fadeIn 1.5s ease-out;
+    }
+
+    .hero-content h2 {
+      font-size: 2rem;
+      font-weight: 300;
+      color: #00ffe0;
+      text-shadow: 0 0 8px rgba(0, 255, 224, 0.6);
+      margin-bottom: 10px;
+      animation: fadeIn 1.8s ease-out;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .section {
+      max-width: 1400px;
+      margin: auto;
+      padding: 30px 30px 60px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .section h2 {
+      font-size: 3rem;
+      font-weight: 600;
+      color: #00f7ff;
+      text-shadow: 0 0 10px rgba(0, 247, 255, 0.7);
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+
+    .service-card {
+      padding: 30px;
+      background: rgba(0, 255, 255, 0.15);
+      border: 1px solid rgba(0, 247, 255, 0.3);
+      border-radius: 15px;
+      color: #e0faff;
+      font-size: 1.2rem;
+      font-weight: 400;
+      box-shadow: 0 5px 20px rgba(0, 247, 255, 0.2);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      animation: fadeIn 1.2s ease-out;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 25px rgba(0, 247, 255, 0.4);
+    }
+
+    .pricing-table {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+
+    .pricing-card {
+      background: rgba(0, 255, 255, 0.15);
+      border: 1px solid rgba(0, 247, 255, 0.3);
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+      width: 300px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      animation: fadeIn 1.2s ease-out;
+    }
+
+    .pricing-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 25px rgba(0, 247, 255, 0.4);
+    }
+
+    .pricing-card h3 {
+      color: #00f7ff;
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      text-shadow: 0 0 5px rgba(0, 247, 255, 0.5);
+    }
+
+    .pricing-card p {
+      font-size: 1.5rem;
+      color: #00ffe0;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    .pricing-card ul {
+      text-align: left;
+      padding-left: 0;
+    }
+
+    .pricing-card ul li {
+      margin: 10px 0;
+    }
+
+    .pricing-card ul li:before {
+      content: "✔";
+      color: #00f7ff;
+      margin-right: 10px;
+    }
+
+    .testimonials {
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .testimonial {
+      padding: 25px;
+      background: rgba(0, 0, 40, 0.5);
+      border-radius: 12px;
+      margin-bottom: 25px;
+      color: #e0faff;
+      font-size: 1.1rem;
+      font-style: italic;
+      animation: fadeIn 1.4s ease-out;
+    }
+
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+    }
+
+    .portfolio-card {
+      background: rgba(0, 255, 255, 0.1);
+      border: 1px solid rgba(0, 247, 255, 0.3);
+      border-radius: 12px;
+      padding: 25px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .portfolio-card:hover {
+      transform: scale(1.05);
+    }
+
+    .portfolio-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .contact {
+      display: flex;
+      justify-content: space-between;
+      gap: 50px;
+      flex-wrap: wrap;
+    }
+
+    .contact-form {
+      flex: 1;
+      min-width: 350px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 20px;
+      background: rgba(0, 0, 40, 0.7);
+      border: 1px solid rgba(0, 247, 255, 0.4);
+      border-radius: 10px;
+      color: #e0faff;
+      font-size: 1.1rem;
+    }
+
+    .contact-form button {
+      background: linear-gradient(45deg, #00f7ff, #00b7ff);
+      color: #000;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      transform: scale(1.05);
+      background: linear-gradient(45deg, #00e0e0, #009fff);
+    }
+
+    .cta {
+      display: inline-block;
+      background: linear-gradient(45deg, #00f7ff, #00b7ff);
+      color: #000;
+      padding: 20px 40px;
+      text-decoration: none;
+      border-radius: 12px;
+      font-size: 1.3rem;
+      font-weight: 600;
+      box-shadow: 0 0 20px rgba(0, 247, 255, 0.6);
+      transition: transform 0.3s ease;
+      animation: fadeIn 1.6s ease-out;
+    }
+
+    .cta:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 30px rgba(0, 247, 255, 0.8);
+    }
+
+    footer {
+      background: rgba(0, 0, 40, 0.8);
+      padding: 50px 30px;
+      text-align: center;
+      border-top: 1px solid rgba(0, 247, 255, 0.3);
+      animation: fadeIn 1.8s ease-out;
+    }
+
+    .footer-container {
+      max-width: 1400px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+
+    .footer-logo {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: #00f7ff;
+      text-shadow: 0 0 8px rgba(0, 247, 255, 0.6);
+    }
+
+    .footer-links a,
+    .footer-social a {
+      color: #e0faff;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 15px;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    .footer-links a:hover,
+    .footer-social a:hover {
+      color: #00f7ff;
+    }
+
+    .footer-copyright {
+      color: #b0b0b0;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 1024px) {
+      .hero-content h1 {
+        font-size: 3.5rem;
+      }
+      .hero-content h2 {
+        font-size: 1.6rem;
+      }
+      .section {
+        padding: 80px 20px;
+      }
+      .services,
+      .portfolio,
+      .pricing-table {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      }
+      .contact {
+        flex-direction: column;
+        gap: 30px;
+      }
+      .cta {
+        padding: 15px 30px;
+        font-size: 1.1rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links a {
+        margin-left: 20px;
+        font-size: 1rem;
+      }
+      .hero-content h1 {
+        font-size: 2.8rem;
+      }
+      .hero-content h2 {
+        font-size: 1.4rem;
+      }
+      .section h2 {
+        font-size: 2.5rem;
+      }
+      .service-card,
+      .pricing-card,
+      .portfolio-card {
+        padding: 20px;
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .nav-links a {
+        margin-left: 10px;
+        font-size: 0.9rem;
+      }
+      .hero-content h1 {
+        font-size: 2rem;
+      }
+      .hero-content h2 {
+        font-size: 1.2rem;
+      }
+      .section {
+        padding: 60px 15px;
+      }
+      .services,
+      .portfolio,
+      .pricing-table {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">Digital World</div>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="particles"></div>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>🚀 King of the Digital World</h1>
+      <h2>Every Task — Done Professionally!</h2>
+      <a href="https://t.me/+ES9P_HZGs140Yzhl" target="_blank" class="cta">📲 View Our Work</a>
+    </div>
+  </section>
+
+  <main>
+    <section class="section" id="services">
+      <h2>Our Premium Services</h2>
+      <div class="services">
+        <div class="service-card">🎵 Want a Song Written? — We’ll Deliver!</div>
+        <div class="service-card">📜 Video Script? — Ready with Research!</div>
+        <div class="service-card">🎨 Thumbnail? — Premium Design Guaranteed!</div>
+        <div class="service-card">📱 App with Your Name? — Built, APK Ready!</div>
+        <div class="service-card">🌐 Website / Portfolio? — Professional Look!</div>
+        <div class="service-card">🎥 YouTube SEO & Growth? — All Included!</div>
+        <div class="service-card">🔥 Reels / Shorts Ideas? — Viral Concepts!</div>
+        <div class="service-card">✍️ Custom Song / Poem? — As You Wish!</div>
+        <div class="service-card">🧠 AI-Powered Work? — Advanced Level!</div>
+        <div class="service-card">💼 Fiverr Gigs, Affiliate Guides, Branding!</div>
+        <div class="service-card">🎨 Logo Design? — Unique & Professional!</div>
+        <div class="service-card">💡 Brand Suggestion? — Perfect Branding Ideas!</div>
+      </div>
+    </section>
+
+    <section class="section" id="pricing">
+      <h2>Our Pricing Plans</h2>
+      <div class="pricing-table">
+        <div class="pricing-card">
+          <h3>Basic Plan</h3>
+          <p>₹500/Per Project</p>
+          <ul>
+            <li>Basic Songwriting or Thumbnail</li>
+            <li>Standard Video Script</li>
+            <li>Basic Support</li>
+          </ul>
+        </div>
+        <div class="pricing-card">
+          <h3>Pro Plan</h3>
+          <p>₹1500/Per Project</p>
+          <ul>
+            <li>All Basic Features</li>
+            <li>Premium App Development</li>
+            <li>YouTube SEO Setup</li>
+            <li>Priority Support</li>
+          </ul>
+        </div>
+        <div class="pricing-card">
+          <h3>Elite Plan</h3>
+          <p>₹3000/Per Project</p>
+          <ul>
+            <li>All Pro Features</li>
+            <li>Custom Website Design</li>
+            <li>Logo Design & Brand Suggestion</li>
+            <li>24/7 Dedicated Support</li>
+            <li>Reels/Shorts Viral Strategy</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="testimonials">
+      <h2>What Our Clients Say</h2>
+      <div class="testimonials">
+        <div class="testimonial">"Digital World created amazing thumbnails for my YouTube channel. Traffic doubled!" — Priya M.</div>
+        <div class="testimonial">"Their professional approach to app development is outstanding." — Rohan K.</div>
+        <div class="testimonial">"Reels ideas went viral. Best service ever!" — Ankit V.</div>
+      </div>
+    </section>
+
+    <section class="section" id="portfolio">
+      <h2>Our Projects</h2>
+      <div class="portfolio">
+        <div class="portfolio-card">
+          <img src="https://via.placeholder.com/320x200" alt="Project 1 - YouTube Thumbnail">
+          <h3>YouTube Thumbnail</h3>
+          <p>High-impact designs for viral videos.</p>
+        </div>
+        <div class="portfolio-card">
+          <img src="https://via.placeholder.com/320x200" alt="Project 2 - Custom App">
+          <h3>Custom App</h3>
+          <p>Fully functional mobile app for a client.</p>
+        </div>
+        <div class="portfolio-card">
+          <img src="https://via.placeholder.com/320x200" alt="Project 3 - Website Design">
+          <h3>Website Design</h3>
+          <p>Modern portfolio for a tech startup.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact Us</h2>
+      <div class="contact">
+        <div class="contact-form">
+          <form>
+            <input type="text" placeholder="Your Name" required aria-label="Your Name">
+            <input type="email" placeholder="Your Email" required aria-label="Your Email">
+            <textarea placeholder="Your Message" rows="4" required aria-label="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+        <a href="https://t.me/+ES9P_HZGs140Yzhl" target="_blank" class="cta">📲 View Our Work</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div>
+        <div class="footer-logo">Digital World</div>
+        <p>Transforming the digital world, one project at a time.</p>
+      </div>
+      <div class="footer-links">
+        <h3>Links</h3>
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-social">
+        <h3>Follow Us</h3>
+        <a href="https://www.youtube.com/@R.jRealFacts" target="_blank">YouTube</a>
+        <a href="https://www.facebook.com/share/1EqA52Z6Ep/" target="_blank">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <p>⚠️ Only Serious Clients | © 2025 Digital World. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
